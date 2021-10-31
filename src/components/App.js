@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Video from './Video';
-import db from './firebase';
-import './App.css';
+import Video from './Video.js';
+import db from '../firebaseConfig.js';
+import '../styles/App.css';
 
 function App() {
   const [videos, setVideos] = useState([]);

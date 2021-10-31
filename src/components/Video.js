@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import VideoFooter from './VideoFooter';
-import VideoSidebar from './VideoSidebar';
-import './Video.css';
+import VideoFooter from './VideoFooter.js';
+import VideoSidebar from './VideoSidebar.js';
+import '../styles/Video.css';
 
 function Video({ url, channel, description, song, likes, messages, shares }) {
   const [playing, setPlaying] = useState(false);
@@ -24,8 +24,8 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
         loop
         onClick={onVideoPress}
         ref={videoRef}
-        src={url}
-        // src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
+        // src={url}
+        src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
       ></video>
       <VideoFooter channel={channel} description={description} song={song} />
       <VideoSidebar likes={likes} messages={messages} shares={shares} />
