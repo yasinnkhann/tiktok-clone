@@ -25,6 +25,7 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
         onClick={onVideoPress}
         ref={videoRef}
         src={url}
+        // src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
       ></video>
       <VideoFooter channel={channel} description={description} song={song} />
       <VideoSidebar likes={likes} messages={messages} shares={shares} />

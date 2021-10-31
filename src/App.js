@@ -16,8 +16,9 @@ function App() {
     <div className='app'>
       <div className='app__videos'>
         {videos.map(
-          ({ url, channel, description, song, likes, messages, shares }) => (
+          ({ url, channel, description, song, likes, messages, shares }, i) => (
             <Video
+              key={i}
               url={url}
               channel={channel}
               song={song}
